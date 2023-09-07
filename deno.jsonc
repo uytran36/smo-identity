@@ -1,0 +1,27 @@
+{
+   "tasks": {
+      "dev": "deno run -A --watch ./src/main.ts",
+      "build": "deno compile -A --output=executable ./src/main.ts"
+   },
+   "imports": {
+      "dotenv": "https://deno.land/std@0.198.0/dotenv/mod.ts",
+      "oak/": "https://deno.land/x/oak@v12.6.0/",
+      "mongo": "https://deno.land/x/mongo@v0.31.2/mod.ts",
+      "zod": "https://deno.land/x/zod@v3.21.4/mod.ts",
+      "bcrypt": "https://deno.land/x/bcrypt@v0.4.1/mod.ts",
+      "jose": "https://deno.land/x/jose@v4.14.4/index.ts",
+      "@config/": "./src/config/",
+      "@middleware/": "./src/middleware/",
+      "@api/": "./src/api/",
+      "@db/": "./src/db/",
+      "@common/": "./src/common/",
+      "@logger": "./src/util/logger.ts",
+      "@resp": "./src/util/api.ts"
+   },
+   "fmt": {
+      "useTabs": false,
+      "semiColons": false,
+      "indentWidth": 3,
+      "singleQuote": true
+   }
+}
